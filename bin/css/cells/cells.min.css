@@ -28,6 +28,7 @@ body {
 }
 
 .toolbar-btn {
+  width: 66px;
   height: 66px;
   line-height: 66px;
   text-align: center;
@@ -58,6 +59,16 @@ body {
 .toolbar-btn.active:hover {
   background: #383838;
   color: rgba(245, 245, 245, 0.8);
+}
+
+.toolbar-btn.github {
+  position: absolute;
+  bottom: 0;
+}
+
+.toolbar-btn.github a {
+  color: rgba(245, 245, 245, 0.4);
+  font-size: 33px;
 }
 
 .toolbar-filler {
