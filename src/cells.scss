@@ -62,14 +62,6 @@ body {
 	background: lighten($toolbar-bg-color, 2%);
 	color: transparentize($toolbar-color, 0.2);
 }
-.toolbar-btn.github{
-	position: absolute;
-	bottom: 0;
-}
-.toolbar-btn.github a{
-	color: transparentize($toolbar-color, 0.6);
-	font-size: $toolbar-unit / 2;
-}
 
 .toolbar-filler {
 	height: $toolbar-unit;

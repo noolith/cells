@@ -61,16 +61,6 @@ body {
   color: rgba(245, 245, 245, 0.8);
 }
 
-.toolbar-btn.github {
-  position: absolute;
-  bottom: 0;
-}
-
-.toolbar-btn.github a {
-  color: rgba(245, 245, 245, 0.4);
-  font-size: 33px;
-}
-
 .toolbar-filler {
   height: 66px;
 }
