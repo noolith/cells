@@ -57,6 +57,11 @@ module.exports = function(grunt){
 				tasks: ['jshint', 'uglify'],
 			},
 
+			html: {
+				files 'src/cells.html',
+				tasks: ['copy'],
+			}
+
 		},
 
 	}
