@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cells</title>
+	<!-- Cells -->
+	<link rel="stylesheet" type="text/css" href="css/cells/cells.min.css">
+	<!-- FontAwesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div id="toolbar">
+		<div id="paintColor" class="toolbar-picker"></div>
+		<div id="backgroundColor" class="toolbar-picker"></div>
+		<div id="cellsGrid" class="toolbar-btn small text">cells</div>
+		<div id="linksGrid" class="toolbar-btn small text">links</div>
+		<div class="toolbar-btn small text">atoms</div>
+	</div>
+	<canvas id="cells"></canvas>
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#cells')
+			.css('height', window.innerHeight)
+			.css('width', window.innerWidth - $('#toolbar').width())
+			.css('left', $('#toolbar').width());
+	</script>
+	<!-- TinyColor -->
+	<script type="text/javascript" src="js/tinycolor.js"></script>
+	<!-- Spectrum Color Picker -->
+	<script type="text/javascript" src="js/spectrum.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/spectrum.css">
+	<!-- Toolbar -->
+	<script type="text/javascript" src="js/cells/toolbar.min.js"></script>
+	<!-- TweenJS -->
+	<script type="text/javascript" src="js/tween.min.js"></script>
+	<!-- PaperJS -->
+	<script type="text/javascript" src="js/paper-full.min.js"></script>
+	<!-- Cells -->
+	<script type="text/paperscript" src="js/cells/cells.min.js" canvas="cells"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #29aadf;
+}
+
+#cells {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  z-index: 1;
+  /*background: lime;*/
+}
+
+/**
+* Toolbar
+*/
+#toolbar {
+  position: absolute;
+  z-index: 2;
+  width: 66px;
+  height: 100%;
+  background: #333333;
+  color: whitesmoke;
+}
+
+.toolbar-btn {
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.toolbar-btn.text {
+  font-weight: bold;
+}
+
+.toolbar-btn.small {
+  height: 33px;
+  line-height: 33px;
+  font-size: 13.2px;
+}
+
+.toolbar-btn:hover {
+  background: #424242;
+}
+
+.toolbar-btn.active {
+  background: #2d2d2d;
+  color: rgba(245, 245, 245, 0.6);
+}
+
+.toolbar-btn.active:hover {
+  background: #383838;
+  color: rgba(245, 245, 245, 0.8);
+}
+
+.toolbar-filler {
+  height: 66px;
+}
+
+.toolbar-picker {
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin: auto;
+  margin-top: 16.5px;
+  margin-bottom: 16.5px;
+}
+
+#paintColor {
+  background: white;
+}
+
+#backgroundColor {
+  background: #29aadf;
+}

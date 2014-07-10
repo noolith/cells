@@ -1,0 +1,84 @@
+$paint-color-start: white;
+$background-color-start: #29AADF;
+$toolbar-bg-color: #333;
+$toolbar-color: #f5f5f5;
+$toolbar-unit: 66px;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: $background-color-start;
+}
+
+#cells {
+	width: 330px;
+	height: 330px;
+	position: absolute;
+	z-index: 1;
+	/*background: lime;*/
+}
+
+/**
+* Toolbar
+*/
+
+#toolbar {
+	position: absolute;
+	z-index: 2;
+	width: $toolbar-unit;
+	height: 100%;
+	background: $toolbar-bg-color;
+	color: $toolbar-color;
+}
+
+.toolbar-btn {
+	height: $toolbar-unit;
+	line-height: $toolbar-unit;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: $toolbar-unit / 3;
+	cursor: pointer;
+}
+.toolbar-btn.text{
+	font-weight: bold;
+}
+.toolbar-btn.small {
+	height: $toolbar-unit / 2;
+	line-height: $toolbar-unit / 2;
+	font-size: $toolbar-unit / 5;
+}
+.toolbar-btn:hover {
+	background: lighten($toolbar-bg-color, 6%);
+}
+.toolbar-btn.active {
+	background: darken($toolbar-bg-color, 2.5%);
+	color: transparentize($toolbar-color, 0.4);
+}
+.toolbar-btn.active:hover {
+	background: lighten($toolbar-bg-color, 2%);
+	color: transparentize($toolbar-color, 0.2);
+}
+
+.toolbar-filler {
+	height: $toolbar-unit;
+}
+
+.toolbar-picker {
+	display: block;
+	width: $toolbar-unit / 2;
+	height: $toolbar-unit / 2;
+	margin: auto;
+	margin-top: $toolbar-unit / 4;
+	margin-bottom: $toolbar-unit / 4;
+}
+
+#paintColor {
+	background: $paint-color-start;
+}
+
+#backgroundColor {
+	background: $background-color-start;
+}

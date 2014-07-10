@@ -1,0 +1,14 @@
+{
+	"name": "Cells",
+	"version": "0.0.0",
+	"devDependencies": {
+		"grunt": "~0.4.5",
+		"grunt-contrib-jshint": "latest",
+		"jshint-stylish": "latest",
+		"grunt-contrib-sass": "~0.7.3",
+		"grunt-contrib-uglify": "latest",
+		"grunt-contrib-cssmin": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-contrib-copy": "latest"
+	}
+}

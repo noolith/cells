@@ -1,0 +1,26 @@
+{
+	"name": "cells",
+	"main": "cells.js",
+	"version": "0.0.0",
+	"authors": [
+		"altitude-labs <salaun.clement@gmail.com>"
+	],
+	"description": "a pix-cell art tool",
+	"license": "MIT",
+	"homepage": "noolith.com",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "~1.11.1",
+		"paper": "~0.9.18",
+		"tweenjs": "r14",
+		"spectrum": "~1.3.2",
+		"fontawesome": "~4.1.0",
+		"tinycolor": "~1.0.0"
+	}
+}
