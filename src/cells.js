@@ -154,19 +154,25 @@ Display.prototype.setGridColor = function(color){
 };
 
 /**
-* Fire
+* Make grids
 */
 
+var sketchWidth = $('#cells').width();
+var sketchHeight = $('#cells').height();
+
+var maxCellsX = parseInt(sketchWidth / (21 * 2)) - 2;
+var maxCellsY = parseInt(sketchHeight / (21 * 2)) - 2;
+
 cellsGrid = new Display({
-	width: 20,
-	height: 10,
+	width: maxCellsX,
+	height: maxCellsY,
 	unit: 20,
 	margin: 21,
 });
 
 linksGrid = new Display({
-	width: 19,
-	height: 9,
+	width: maxCellsX - 1,
+	height: maxCellsY - 1,
 	unit: 9,
 	margin: 21,
 });
