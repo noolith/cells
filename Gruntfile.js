@@ -58,9 +58,9 @@ module.exports = function(grunt){
 			},
 
 			html: {
-				files 'src/cells.html',
+				files: 'src/cells.html',
 				tasks: ['copy'],
-			}
+			},
 
 		},
 
