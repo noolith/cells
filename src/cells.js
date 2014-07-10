@@ -145,6 +145,14 @@ Display.prototype.hideGrid = function(){
 	});
 };
 
+Display.prototype.showGrid = function(){
+	this.pixels.forEach(function(line){
+		line.forEach(function(pixel){
+			pixel.circle.strokeColor.alpha = 0.5;
+		});
+	});
+};
+
 Display.prototype.setGridColor = function(color){
 	this.pixels.forEach(function(line){
 		line.forEach(function(pixel){

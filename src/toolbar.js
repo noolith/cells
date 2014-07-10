@@ -22,14 +22,16 @@ $("#paintColor").spectrum({
 * Show / Hide grids
 */
 
-$("#cellsGrid").click(function(){
-	if($(this).attr('disp') == 'false'){
-		$(this).removeClass('active');
-		$(this).attr('disp', 'true');
-		cellsGrid.grid.visible = true;
-	} else {
+$("#dispGrids").click(function(){
+	if($(this).attr('state') == 'on'){
+		$(this).attr('state', 'off');
 		$(this).addClass('active');
-		$(this).attr('disp', 'false');
-		cellsGrid.grid.visible = false;
+		cellsGrid.hideGrid();
+		linksGrid.hideGrid();
+	} else {
+		$(this).attr('state', 'on');
+		$(this).removeClass('active');
+		cellsGrid.showGrid();
+		linksGrid.showGrid();
 	}
 });
