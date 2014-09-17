@@ -11,6 +11,10 @@ mkdir -p $dirname/bin/js/cells
 mkdir -p $dirname/bin/css
 mkdir -p $dirname/bin/css/cells
 
+# Node tools
+
+npm install
+
 # Components
 
 bower install

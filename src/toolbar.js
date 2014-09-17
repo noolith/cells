@@ -23,15 +23,24 @@ $("#paintColor").spectrum({
 */
 
 $("#dispGrids").click(function(){
+	
 	if($(this).attr('state') == 'on'){
+		
 		$(this).attr('state', 'off');
 		$(this).addClass('active');
+		
 		cellsGrid.hideGrid();
 		linksGrid.hideGrid();
+
 	} else {
+		
 		$(this).attr('state', 'on');
 		$(this).removeClass('active');
+		
 		cellsGrid.showGrid();
 		linksGrid.showGrid();
 	}
+
+	// Redraw
+	paper.view.draw();
 });

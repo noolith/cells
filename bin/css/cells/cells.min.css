@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background: #29aadf;
+  background: #29AADF;
 }
 
 #cells {
@@ -23,8 +23,8 @@ body {
   z-index: 2;
   width: 66px;
   height: 100%;
-  background: #333333;
-  color: whitesmoke;
+  background: #333;
+  color: #f5f5f5;
 }
 
 .toolbar-btn {
@@ -79,5 +79,7 @@ body {
 }
 
 #backgroundColor {
-  background: #29aadf;
+  background: #29AADF;
 }
+
+/*# sourceMappingURL=cells.min.css.map */
