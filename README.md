@@ -1,4 +1,4 @@
-# Cells [![Codeship Status for noolith/cells](https://www.codeship.io/projects/c4c105c0-20a0-0132-bde1-1ae60ee36e33/status)](https://www.codeship.io/projects/36010)
+# Cells
 
 Cells is a new 2d art tool.
 demo here: [cells.noolith.com](http://cells.noolith.com)
