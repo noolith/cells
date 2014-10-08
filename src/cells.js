@@ -15,8 +15,6 @@ function Sketch(options){
 
 }
 
-paintColor = 'white';
-
 /**
 * Frame
 */
@@ -75,6 +73,22 @@ function Pixel(parent, x, y){
 		this.paint(paintColor);
 	};
 
+	this.circle.onMouseDrag = function(event){
+		if(this.isOn())
+			painting = 'on';
+		else
+			painting = 'off';
+	};
+
+	this.circle.onMouseEnter = function(event){
+		if(painting == 'on'){
+			this.on();
+			this.paint(paintColor);
+		} else if(painting == 'off'){
+			this.off();
+		}
+	};
+
 	this.circle.flip = function(){
 		this.fillColor.alpha = 1 - this.fillColor.alpha;
 	};
@@ -85,6 +99,14 @@ function Pixel(parent, x, y){
 
 	this.circle.off = function(){
 		this.fillColor.alpha = 0;
+	};
+
+	this.circle.isOn = function(){
+		return this.fillColor.alpha == 1;
+	};
+
+	this.circle.isOff = function(){
+		return this.fillColor.alpha === 0;
 	};
 
 	this.circle.set = function(alpha){
@@ -184,3 +206,14 @@ linksGrid = new Display({
 	unit: 9,
 	margin: 21,
 });
+
+/**
+* Behavior
+*/
+
+paintColor = 'white';
+painting = false;
+
+function onMouseUp(event){
+	painting = false;
+}
